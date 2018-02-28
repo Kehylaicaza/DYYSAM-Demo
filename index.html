@@ -1,0 +1,237 @@
+<!doctype html>
+
+<html class="no-js" lang="">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DYYSAM</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.transitions.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/line-icon.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!-- header section -->
+    <section class="banner" role="banner">
+        <header id="header">
+            <div class="header-content clearfix"> <a class="logo" href="#"><img src="images/oficial.png" alt=""></a>
+                <!-- navigation section  -->
+                <nav class="navigation" role="navigation">
+                    <ul class="primary-nav">
+                        <li><a href="#banner">Home</a></li>
+                        <li><a href="#acerca">Acerca De</a></li>
+                        <li><a href="#juego">Juego</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </nav>
+                <a href="#" class="nav-toggle">Menu<span></span></a> </div>
+            <!-- navigation section  -->
+        </header>
+        <!-- banner text section-->
+        <div id="banner" class="container">
+            <div class="col-md-12 col-sm-12">
+
+
+                <!-- banner text section-->
+
+            </div>
+        </div>
+    </section>
+    <!-- header section -->
+    <!-- overview section -->
+    <section id="acerca" class="section overview">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2 text-center">
+                    <h2 class="section-title"> <span>DYYSAM</span></h2>
+                    <p class="section-intro">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis quasi architecto beatae vitae dicta sunt explicabo. </p>
+                </div>
+                <div class="col-md-12 text-center overview-video">
+                    <iframe src="http://www.youtube.com/embed/UreAVdyMjdE?autoplay=0" frameborder="0" allowfullscreen> </iframe>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-sm-12 "> <span class="icon icon-browser"></span>
+                    <div class="overview-content">
+                        <h4>Jonathan Loor</h4>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium demque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore </p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-12 "> <span class="icon icon-trophy"></span>
+                    <div class="overview-content">
+                        <h4>Priscilla Zambrano</h4>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium demque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore </p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-12 "> <span class="icon icon-lifesaver"></span>
+                    <div class="overview-content">
+                        <h4>Keila Cuenca</h4>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium demque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore </p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-12 "> <span class="icon icon-lifesaver"></span>
+                    <div class="overview-content">
+                        <h4>Abraham Cardenas</h4>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium demque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!--subscribe section -->
+    <section id="juego" class="section subscribe">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2 text-center">
+                    <h2 class="section-title"> <span>Triviblia</span></h2>
+                    <p class="section-intro">¿Cuánto sabes de la Biblia? </p>
+                </div>
+                <div class="col-md-12 text-center overview-video">
+                    <div class="trivi" id="triviblia">
+                        <button id="iniciar" class="jugar">Jugar</button>
+
+                        <div id="myModal" class="modal">
+                            <span class="close">&times;</span>
+                            <!-- Modal content -->
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <audio controls loop id="fondo">
+  <source src="audios/King%20Of%20My%20Heart%20-%20%5BLyric%20Video%5D%20Kutless.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+                                    <audio id="find">
+  <source src="audios/fail_horn.mp3" type="audio/mpeg" >
+Your browser does not support the audio element.
+</audio>
+                                    <audio id="find1">
+  <source src="audios/correct_answer.mp3" type="audio/mpeg" >
+Your browser does not support the audio element.
+</audio>
+                                    <button class="jugar" id="siguiente">Siguiente Pregunta</button>
+                                    <img class="figurilla" id="correcta" src="images/correcta.png" />
+                                    <img class="figurilla" id="incorrecta" src="images/Codigo-X.png" />
+                                    <h2 id="pregunta"></h2>
+                                     <h1 id="total"></h1>
+
+                                </div>
+
+
+                                <div class="modal-body" id="respuestas">
+                                    <br><br><br>
+                                    <button class="opciones" id="a"> </button>
+                                    <button class="opciones" id="b"> </button>
+                                    <button class="opciones" id="c"> </button>
+                                </div>
+
+                                <div class="modal-footer" id="fin">
+                                    <div class="row">
+
+                                        <div class="col-md-3 col-sm-12 ">
+                                            <div class="overview-content">
+                                                <label>Respuesta: </label>
+                                                <label id="resC"></label>
+
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-sm-12 ">
+                                            <div class="overview-content">
+                                                <label>Cita Bíblica: </label>
+                                                <label id="cita"></label>
+                                            </div>
+                                        </div>
+                                          <div class="col-md-3 col-sm-12 ">
+                                            <div class="overview-content">
+                                                <label>Puntos: </label>
+                                                <label id="puntos">0</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!--subscribe section -->
+
+    <!--contact section -->
+
+    <section id="contacto" class="section text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2 ">
+                    <h2 class="section-title">Get In Touch <span>Say Hello!</span></h2>
+                    <p class="section-intro">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae. </p>
+                </div>
+            </div>
+
+            <!--contact form start-->
+            <div class="col-md-6 col-md-offset-3 conForm">
+                <div id="message"></div>
+                <form method="post" action="php/contact.php" name="cform" id="cform">
+                    <input name="name" id="name" type="text" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" placeholder="Your name...">
+                    <input name="email" id="email" type="email" class=" col-xs-12 col-sm-12 col-md-12 col-lg-12 noMarr" placeholder="Email Address...">
+                    <textarea name="comments" id="comments" cols="" rows="" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" placeholder="Project Details..."></textarea>
+                    <input type="submit" id="submit" name="send" class="submitBnt" value="Send">
+                    <div id="simple-msg"></div>
+                </form>
+            </div>
+            <!--contact form end-->
+        </div>
+    </section>
+
+    <!--contact section -->
+    <!-- footer section-->
+    <footer class="section footer">
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="col-md-12">
+                    <p>
+                        <ul class="footer-share">
+                            <li><a href="https://www.facebook.com/DyysamGameStoreEC/"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                            <li><a href="https://www.youtube.com/channel/UCqQ7PfDdd9y3uTSzxzL56dQ"><i class="fa fa-youtube-play"></i></a></li>
+                            <li><a href="#"><i class="fa fa-vimeo"></i></a></li>
+                        </ul>
+
+                        <p>© Copyright © 2018 GREATER. All Rights Reserved. Made with <i class="fa fa-heart pulse"></i> by <a href="http://www.designstub.com/">Designstub</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer section-->
+    <!-- Include JS files -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.fancybox.pack.js"></script>
+    <script src="js/retina.min.js"></script>
+    <script src="js/modernizr.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.subscribe.js"></script>
+    <script src="js/jquery.contact.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
