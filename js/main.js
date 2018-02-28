@@ -147,7 +147,7 @@ $(document).ready(function () {
         modale3.style.display = "none";
         var modale4 = document.getElementById('incorrecta');
         modale4.style.display = "none";
-        if (il < 12) {
+        if (il <=12) {
             $("#resC").empty();
             $("#cita").empty();
             il++;
